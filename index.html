@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="A simplified version of a German clarinet for an interactive fingering chart.">
+    <meta name="author" content="Florian Scholdei">
+    <title>clarinet-mockup</title>
+    <link href="main.css" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+<body>
+<label for="vol"></label><input type="range" class="switcher" id="vol" name="vol" min="0" max="400" value="120">
+<div class="grid">
+
+    <svg class="mouthpiece" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 296.49 764.51">
+        <path d="M.86,764H295.78c0-95,3.28-226.1-16.38-399.78C248.58,92,276.12.5,135.22.5-2.41.5,30.72,95.56,10.69,361-2.41,534.63.86,669,.86,764Z"/>
+    </svg>
+
+    <div class="barrel">
+        <hr class="decoration">
+        <svg class="part" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 325.41 574.45">
+            <defs>
+                <linearGradient id="barrelDef" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="30%" style="stop-color:rgb(28,27,26)" />
+                    <stop offset="65%" style="stop-color:rgb(54,52,50)" />
+                    <stop offset="75%" style="stop-color:rgb(42,41,38)" />
+                    <stop offset="94%" style="stop-color:rgb(28,27,26)" />
+                </linearGradient>
+            </defs>
+            <path fill="url(#barrelDef)" d="M16.53.5S.5,197.2.5,305.25C.5,393.64,13.55,574,13.55,574H316.72s8.19-192.56,8.19-268.7C324.91,194.61,310.77.5,310.77.5Z"/>
+        </svg>
+        <hr class="decoration">
+    </div>
+
+    <div class="upper-joint">
+        <div class="behind">
+            <div class="tear" id="overflow"></div>
+            <div class="key" id="thumb"></div>
+        </div>
+        <div class="tear ring centered" id="a-key"></div>
+        <div class="key ring" id="as-key"></div>
+        <div class="key ring centered" id="index-finger"></div>
+        <div class="key ring centered" id="fc-key"></div>
+        <div class="key ring centered" id="middle-finger"></div>
+        <div class="key ring centered" id="b-key"></div>
+        <div class="key ring centered" id="ring-finger"></div>
+        <div id="gis-key"></div>
+        <div class="trills">
+            <div class="trill" id="fourth-trill"></div>
+            <div class="trill" id="third-trill"></div>
+            <div class="trill" id="second-trill"></div>
+            <div class="trill" id="first-trill"></div>
+        </div>
+    </div>
+
+    <div class="lower-joint">
+        <hr class="decoration">
+        <div class="right">
+            <div id="h-key"></div>
+            <div id="cis-key"></div>
+            <div class="lift" id="f-lift"></div>
+            <div class="lift" id="es-lift"></div>
+        </div>
+        <div class="keys">
+            <div class="key ring centered" id="index-finger2"></div>
+            <div class="key ring centered" id="middle-finger2"></div>
+            <div class="key ring centered" id="f-key"></div>
+            <div class="key ring centered" id="ring-finger2"></div>
+        </div>
+        <div class="left">
+            <div id="es-key"></div>
+            <div id="c-key"></div>
+        </div>
+        <hr class="decoration">
+    </div>
+
+    <svg class="bell" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 718.64 971.1">
+        <defs>
+            <linearGradient id="bellDef" x1="10%" y1="-20%" x2="100%" y2="-40%">
+                <stop offset="25%" style="stop-color:rgb(28,27,26)" />
+                <stop offset="45%" style="stop-color:rgb(54,52,50)" />
+                <stop offset="65%" style="stop-color:rgb(42,41,38)" />
+                <stop offset="90%" style="stop-color:rgb(28,27,26)" />
+            </linearGradient>
+        </defs>
+        <path fill="url(#bellDef)" d="M193.08.49c-16.59,362.25-33.05,535-99.55,793.64C68.64,890.92-20.47,887.52,5,913c76.05,76.05,630.49,77.43,707.92,0,26.27-26.27-54.31-19.92-88.49-127.2-69-254.25-85-422.25-95-785.34H193.08Z"/>
+    </svg>
+</div>
+</body>
+</html>
